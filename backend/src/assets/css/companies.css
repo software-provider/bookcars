@@ -1,0 +1,81 @@
+div.companies {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+}
+
+div.companies .search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.companies .info-box {
+    background-color: #fff;
+}
+
+/* Device width is less than or equal to 960px */
+
+@media only screen and (max-width: 960px) {
+    div.companies div.col-1 {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.companies div.col-1 div.col-1-container {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    div.companies .sc-search {
+        width: 80%;
+    }
+
+    div.companies .new-company {
+        margin: 20px 5px 5px 0;
+        width: 100%;
+    }
+
+    div.companies div.col-1 .company-count {
+        display: none;
+    }
+
+    div.companies div.col-2 {
+        margin-top: 3px;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Device width is greater than or equal to 960px */
+
+@media only screen and (min-width: 960px) {
+    div.companies div.col-1 {
+        float: left;
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    div.companies div.col-2 {
+        float: left;
+        width: calc(100% - 320px);
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.companies .search {
+        margin-top: 15px;
+    }
+
+    div.companies .new-company {
+        margin: 10px 5px 0 0;
+        width: 100%;
+    }
+}

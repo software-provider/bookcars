@@ -1,0 +1,15 @@
+[Unit]
+Description=BookCars API
+Wants=mongod.service
+After=mongod.service
+
+[Service]
+ExecStart=/usr/bin/node -r dotenv/config app.js
+WorkingDirectory=/opt/bookcars/api
+Type=simple
+Restart=always
+StandardOutput=append:/var/log/bookcars.log
+StandardError=append:/var/log/bookcars.log
+
+[Install]
+WantedBy=multi-user.target

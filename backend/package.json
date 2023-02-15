@@ -1,0 +1,53 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "@mui/x-data-grid": "^5.17.16",
+    "@mui/x-date-pickers": "^5.0.11",
+    "axios": "^1.2.1",
+    "date-fns": "^2.29.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-localization": "^1.0.19",
+    "react-router-dom": "^6.5.0",
+    "react-scripts": "^5.0.1",
+    "react-toastify": "^9.1.1",
+    "validator": "^13.7.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:stats": "react-scripts build --stats",
+    "analyze": "webpack-bundle-analyzer build/bundle-stats.json -p 5000",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^4.7.0"
+  }
+}
